@@ -1,16 +1,24 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
+// import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import { store } from "./redux-store/store/store";
+// import Routing from "./Routing";
+// import Higher from "./component/higher-order-component/Higher";
+// import GridComponent from "./component/learn-grid/GridComponent";
+import Accordian from "./common-component/accordian/Accordian";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   // <React.StrictMode>
   <Provider store={store}>
-    <App />
+    {/* <Routing /> */}
+    {/* <Higher /> */}
+    {/* <GridComponent /> */}
+    <Accordian />
   </Provider>
   // </React.StrictMode>
 );

@@ -3,6 +3,9 @@ import { useDispatch } from "react-redux";
 import { addItem } from "../../redux-store/slice/cartSlice";
 import Pagination from "../../common-component/pagination/Pagination";
 
+import CustomDatePicker from "../../common-component/CustomDatePicker/CustomDatePicker";
+import PrescriptionGenerator from "../html-to-pdf/FormToPdf";
+
 const PRODUCTS_LIST = [
   {
     id: "1",
@@ -113,6 +116,13 @@ const Products = () => {
           </div>
         );
       })}
+
+      {/* <FormToPDF /> */}
+      <PrescriptionGenerator />
+      {/* <HtmlToPdf /> */}
+      {/* <FormToPDF /> */}
+
+      <CustomDatePicker />
       <Pagination
         currentPage={currentPage}
         setCurrentPage={setCurrentPage}

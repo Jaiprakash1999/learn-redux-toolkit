@@ -1,0 +1,46 @@
+/* CustomDatePicker.css */
+.calendar {
+  font-family: Arial, sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 250px;
+  padding: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.month {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.days {
+  display: flex;
+}
+
+.day {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #eee;
+}
+
+.empty {
+  background-color: #f7f7f7;
+}
+
+.selected {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.week {
+  display: flex;
+}

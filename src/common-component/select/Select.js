@@ -27,7 +27,7 @@ const Select = () => {
     return () => {
       document.removeEventListener("mousedown", handleClickOutSide);
     };
-  }, []);
+  }, [isOpen]);
 
   return (
     <div style={{ position: "relative" }} ref={dropDownRef}>
